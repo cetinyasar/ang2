@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <link href="style/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="style/sidebar.css" rel="stylesheet" />
+    <link href="style/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet" />
+    <!-- 1. Load libraries -->
+    <script src="libs/angular2-polyfills.js"></script>
+    <script src="libs/system.js"></script>
+    <script src="libs/rx.js"></script>
+    <script src="libs/angular2.dev.js"></script>
+
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="scripts/jquery/jquery-2.2.0.js"></script>
+    <script src="style/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <script>
+        System.config({
+            packages: {
+                appScripts: {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+      System.import('appScripts/boot')
+            .then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+    <my-app>Yükleniyor...</my-app>
+</body>
+</html>
+
+
